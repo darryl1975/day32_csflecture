@@ -1,14 +1,12 @@
 import { ThisReceiver } from "@angular/compiler";
 
 export class employee {
-    id: number;
     name: string;
     email: string;
     username: string;
     password: string;
 
-    constructor(id: number, name: string, email: string, username: string, password: string) {
-        this.id = id;
+    constructor(name: string, email: string, username: string, password: string) {
         this.name = name;
         this.email = email;
         this.username = username;
