@@ -1,8 +1,9 @@
+<!-- <app-item-list [itemList]="items" (newItemEvent)="onItemReceive($event)"></app-item-list>
+  <app-employee-list></app-employee-list> -->
 
-<app-item-list [itemList]="items" (newItemEvent)="onItemReceive($event)"></app-item-list>
-
-<app-employee-list></app-employee-list>
-<router-outlet></router-outlet>
+<app-animal-form></app-animal-form>
+<router-outlet>
+</router-outlet>
 
 <div *ngIf="selectedItem">
   <h3>You have selected the item {{selectedItem.name}}.</h3>
