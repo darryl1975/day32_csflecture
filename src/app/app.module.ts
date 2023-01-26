@@ -7,14 +7,16 @@ import { AppComponent } from './app.component';
 import { ItemListComponent } from './item-list/item-list.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { AnimalFormComponent } from './animal-form/animal-form.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { EmployeeFormComponent } from './employee-form/employee-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ItemListComponent,
     EmployeeListComponent,
-    AnimalFormComponent
+    AnimalFormComponent,
+    EmployeeFormComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +25,8 @@ import { FormsModule } from '@angular/forms';
       {path: 'employeelist', component: EmployeeListComponent},
     ]),
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

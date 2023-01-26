@@ -12,7 +12,8 @@ export class AnimalFormComponent {
   form: animal = {
     id: 0,
     name: '',
-    lifespan: 0
+    lifespan: 0,
+    email: ''
   };
 
   onSubmit(_t4: NgForm): void {
